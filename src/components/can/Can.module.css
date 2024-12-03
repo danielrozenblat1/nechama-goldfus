@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+  background: linear-gradient(
+    165deg, 
+    rgba(255, 253, 250, 0.95) 15%, 
+    rgba(251, 248, 243, 0.9) 30%, 
+    rgba(245, 241, 232, 0.85) 50%, 
+    rgba(251, 248, 243, 0.9) 70%, 
+    rgba(255, 253, 250, 0.95) 85%
+  );
+  padding: 0.2rem 0.55rem;
+  direction: rtl;
+  width: 320px;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 
+    0 8px 32px 0 rgba(200, 198, 196, 0.1),
+    0 2px 8px 0 rgba(200, 198, 196, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 0.4),
+    0 4px 12px rgba(164, 162, 161, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 40px 0 rgba(200, 198, 196, 0.2),
+    0 3px 10px 0 rgba(200, 198, 196, 0.15),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 0.5),
+    0 6px 16px rgba(164, 162, 161, 0.12);
+}
+
+.text {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.15rem;
+  direction: rtl;
+  margin-right: 10px;
+  font-weight: 300;
+  width: 80%;
+  
+}
+
+.icon {
+  width: 20%;
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 270px;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon {
+    width: 30%;
+    text-align: center;
+  }
+}

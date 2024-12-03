@@ -1,0 +1,505 @@
+.pageWrapper {
+    width: 50%;
+    margin: 2rem auto;
+    direction: rtl;
+}
+
+.pageContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.coursesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.courseContainer {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(233, 227, 220, 0.3);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggleButton {
+    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    transition: all 0.3s ease;
+}
+
+.toggleButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonContent {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.titleWrapper {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.4rem;
+    color: #333333;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.2rem;
+    color: #666666;
+    margin: 0.25rem 0 0 0;
+}
+
+.header {
+    font-family: 'Assistant', sans-serif;
+    font-size: 3.5rem;
+    margin: 5rem auto 3rem;
+    direction: rtl;
+    text-align: center;
+}
+
+.subHeader {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 2.2rem;
+    margin: 4rem auto 2rem;
+    direction: rtl;
+    text-align: center;
+}
+
+.goldUnderline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(212, 175, 55, 0),
+        rgba(212, 175, 55, 1),
+        rgba(212, 175, 55, 0)
+    );
+}
+
+.toggleIcon {
+    font-size: 2rem;
+    color: #333333;
+    transition: transform 0.3s ease;
+}
+
+.contentWrapper {
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.servicesContainer {
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.weddingDescription {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+}
+
+.weddingParagraph {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #4A4A4A;
+    margin-bottom: 1.5rem;
+    text-align: right;
+}
+
+.weddingParagraph:last-child {
+    margin-bottom: 0;
+}
+
+.serviceItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(233, 227, 220, 0.2);
+}
+
+.serviceItem:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(-4px);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.iconWrapper {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.mainIconWrapper {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.serviceItem:hover .iconWrapper {
+    background: rgba(212, 175, 55, 0.2);
+}
+
+.icon, .mainIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #D4AF37;
+}
+
+.mainIcon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.serviceText {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.125rem;
+    color: #4A4A4A;
+    flex: 1;
+}
+
+/* Card Type Specific Styles */
+.basic {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(248, 247, 246, 0.8));
+}
+
+.plus {
+    background: linear-gradient(135deg, rgba(248, 247, 246, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+.wedding {
+    background: linear-gradient(135deg, rgba(255, 252, 249, 0.8), rgba(255, 248, 241, 0.8));
+}
+
+/* Event Cards Specific Styles */
+.graduation, .photoshoot {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s ease;
+}
+
+.graduation:hover, .photoshoot:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Consultation Cards Specific Styles */
+.consultationCard {
+    background: linear-gradient(135deg, rgba(255, 253, 250, 0.9), rgba(253, 248, 240, 0.9));
+    border: 1px solid rgba(218, 165, 32, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.consultationCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.08);
+}
+
+.consultationToggleButton {
+    background: transparent;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.08);
+    padding: 2.5rem;
+}
+
+.consultationToggleButton:hover {
+    background: rgba(218, 165, 32, 0.03);
+}
+
+.consultationMainIconWrapper {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 12px rgba(218, 165, 32, 0.12);
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.consultationMainIconWrapper .mainIcon {
+    color: rgba(218, 165, 32, 0.95);
+}
+
+.consultationUnderline {
+    background: linear-gradient(
+        to right,
+        rgba(218, 165, 32, 0),
+        rgba(218, 165, 32, 0.6),
+        rgba(218, 165, 32, 0)
+    );
+    height: 1px;
+}
+
+.consultationServicesContainer {
+    background: transparent;
+    padding: 2rem 3rem;
+}
+
+.consultationDescription {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(218, 165, 32, 0.05);
+}
+
+.consultationDescription .weddingParagraph {
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+}
+
+.eventMainIconWrapper {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.eventMainIconWrapper .mainIcon {
+    color: rgba(212, 175, 55, 0.9);
+}
+
+.eventToggleButton {
+    background: transparent;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.05);
+    padding: 2.5rem;
+}
+
+.eventToggleButton:hover {
+    background: rgba(212, 175, 55, 0.02);
+}
+
+.eventUnderline {
+    background: linear-gradient(
+        to right,
+        rgba(212, 175, 55, 0),
+        rgba(212, 175, 55, 0.5),
+        rgba(212, 175, 55, 0)
+    );
+    height: 1px;
+}
+
+.eventServicesContainer {
+    background: transparent;
+    padding: 2rem 3rem;
+}
+
+.eventDescription {
+    background: transparent;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0;
+}
+
+.eventDescription .weddingParagraph {
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.goldUnderline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(212, 175, 55, 0),
+        rgba(212, 175, 55, 0.5),
+        rgba(212, 175, 55, 0)
+    );
+    animation: shimmer 30s infinite linear;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 350px) {
+    .pageWrapper {
+        width: 95%;
+        margin: 2rem auto;
+    }
+    .pageContainer { padding: 0 1rem; }
+    .header { font-size: 2rem; }
+    .subHeader { font-size: 1.5rem; }
+    .toggleButton { padding: 1.5rem; }
+    .title { font-size: 1rem; }
+    .iconWrapper, .mainIconWrapper {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .icon, .mainIcon { 
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .serviceText { font-size: 0.9rem; }
+    .weddingParagraph { font-size: 0.9rem; }
+    .consultationMainIconWrapper,
+    .eventMainIconWrapper {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 450px) {
+    .pageWrapper { width: 95%; }
+    .header { font-size: 2.2rem; }
+    .subHeader { font-size: 1.6rem; }
+    .toggleButton { padding: 1.7rem; }
+    .title { font-size: 1.1rem; }
+    .iconWrapper, .mainIconWrapper {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+    .serviceText { font-size: 1rem; }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+    .pageWrapper { width: 90%; }
+    .header { font-size: 2.4rem; }
+    .subHeader { font-size: 1.7rem; }
+    .toggleButton { padding: 1.8rem; }
+    .title { font-size: 1.2rem; }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+    .pageWrapper { width: 85%; }
+    .header { font-size: 2.6rem; }
+    .subHeader { font-size: 1.8rem; }
+    .toggleButton { padding: 2rem; }
+    .title { font-size: 1.25rem; }
+}
+
+@media (min-width: 651px) and (max-width: 750px) {
+    .pageWrapper { width: 80%; }
+    .header { font-size: 2.8rem; }
+    .subHeader { font-size: 1.9rem; }
+    .toggleButton { padding: 2.1rem; }
+    .title { font-size: 1.3rem; }
+}
+
+@media (min-width: 751px) and (max-width: 850px) {
+    .pageWrapper { width: 75%; }
+    .header { font-size: 3rem; }
+    .subHeader { font-size: 2rem; }
+    .toggleButton { padding: 2.2rem; }
+    .title { font-size: 1.35rem; }
+}
+
+@media (min-width: 851px) and (max-width: 950px) {
+    .pageWrapper { width: 70%; }
+    .header { font-size: 3.2rem; }
+    .subHeader { font-size: 2.1rem;
+    }
+    .toggleButton { padding: 2.3rem; }
+    .title { font-size: 1.4rem; }
+}
+
+@media (min-width: 951px) and (max-width: 1050px) {
+    .pageWrapper { width: 65%; }
+    .header { font-size: 3.3rem; }
+    .subHeader { font-size: 2.15rem; }
+    .toggleButton { padding: 2.4rem; }
+}
+
+@media (min-width: 1051px) and (max-width: 1150px) {
+    .pageWrapper { width: 60%; }
+    .header { font-size: 3.4rem; }
+    .subHeader { font-size: 2.2rem; }
+}
+
+@media (min-width: 1151px) and (max-width: 1250px) {
+    .pageWrapper { width: 55%; }
+}
+
+/* Print Styles */
+@media print {
+    .courseContainer {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .goldUnderline,
+    .goldUnderline::after {
+        display: none;
+    }
+
+    .pageWrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header,
+    .subHeader {
+        margin: 2rem auto;
+    }
+
+    .servicesContainer,
+    .eventServicesContainer,
+    .consultationServicesContainer {
+        padding: 1rem;
+    }
+
+    .toggleButton {
+        padding: 1.5rem;
+    }
+
+    .icon,
+    .mainIcon {
+        color: #000;
+    }
+}
