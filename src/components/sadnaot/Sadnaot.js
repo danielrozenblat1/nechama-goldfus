@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import styles from './Sadnaot.module.css';
+import Button from '../button/Button';
 import Sadnaot from '../recommends/Sadnaot';
 
-const CourseBox = ({ title, subtitle, sessions }) => {
+const CourseBox = ({ title, subtitle, sessions, message }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <div className={styles.courseWrapper} id="סדנאות">
       <button 
@@ -25,21 +26,30 @@ const CourseBox = ({ title, subtitle, sessions }) => {
       
       <div className={`${styles.contentWrapper} ${isOpen ? styles.open : ''}`}>
         <div className={styles.meetingsContainer}>
-          {sessions.map((session, index) => (
-            <div key={index} className={styles.meetingBox}>
-              <div className={styles.meetingHeader}>
-                <span className={styles.meetingNumber}>{index + 1}</span>
-                <h3 className={styles.meetingTitle}>מפגש {session.number}</h3>
+          <div className={styles.innerContentWrapper}>
+            {sessions.map((session, index) => (
+              <div key={index} className={styles.meetingBox}>
+                <div className={styles.meetingHeader}>
+                  <span className={styles.meetingNumber}>{index + 1}</span>
+                  <h3 className={styles.meetingTitle}>מפגש {session.number}</h3>
+                </div>
+                <ul className={styles.detailsList}>
+                  {session.details.map((detail, idx) => (
+                    <li key={idx} className={styles.detailItem}>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className={styles.detailsList}>
-                {session.details.map((detail, idx) => (
-                  <li key={idx} className={styles.detailItem}>
-                    {detail}
-                  </li>
-                ))}
-              </ul>
+            ))}
+            <div className={styles.buttonContainer}>
+              <Button 
+                text="עוד פרטים"
+                message={message}
+                className={styles.contactButton}
+              />
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>
@@ -50,6 +60,7 @@ const Courses = () => {
   const supremeCourse = {
     title: "קורס Supreme Woman",
     subtitle: "סדרה של 3 מפגשים - שעתיים כל מפגש",
+    message: "היי נחמה, אשמח לשמוע עוד פרטים על קורס Supreme Woman",
     sessions: [
       {
         number: "ראשון",
@@ -80,6 +91,7 @@ const Courses = () => {
   const refreshCourse = {
     title: "סדנת Refresh & Makeup",
     subtitle: "העור המתבגר- סדנה קבוצתית מתאימה לגילאי 14+",
+    message: "היי נחמה, אשמח לשמוע עוד פרטים על סדנת Refresh & Makeup",
     sessions: [
       {
         number: "יחיד",
@@ -96,7 +108,8 @@ const Courses = () => {
 
   const oneByOneCourse = {
     title: "סדנת One By One",
-    subtitle: "בת שעתיים",
+    subtitle: "סדנה של מפגש אחד בת שעתיים",
+    message: "היי נחמה, אשמח לשמוע עוד פרטים על סדנת One By One",
     sessions: [
       {
         number: "יחיד",
@@ -112,7 +125,8 @@ const Courses = () => {
 
   const takeAMomentCourse = {
     title: "סדנת Take a Moment",
-    subtitle: "קודם כל נפנה בכוס יין, חברה ואווירה טובה...",
+    subtitle: "טיפים לפרטים לאיפור יום יומי - מפגש אחד",
+    message: "היי נחמה, אשמח לשמוע עוד פרטים על סדנת Take a Moment",
     sessions: [
       {
         number: "יחיד",
@@ -125,16 +139,18 @@ const Courses = () => {
     ]
   };
 
-  return <>
-    <div className={styles.title}>הקורסים והסדנאות שלי</div>
-    <div className={styles.container} dir="rtl">
-      <CourseBox {...supremeCourse} />
-      <CourseBox {...refreshCourse} />
-      <CourseBox {...oneByOneCourse} />
-      <CourseBox {...takeAMomentCourse} />
-    </div>
-    <Sadnaot/>
+  return (
+    <>
+      <div className={styles.title}>הקורסים והסדנאות שלי</div>
+      <div className={styles.container} dir="rtl">
+        <CourseBox {...supremeCourse} />
+        <CourseBox {...refreshCourse} />
+        <CourseBox {...oneByOneCourse} />
+        <CourseBox {...takeAMomentCourse} />
+      </div>
+      <Sadnaot/>
     </>
+  );
 };
 
 export default Courses;
