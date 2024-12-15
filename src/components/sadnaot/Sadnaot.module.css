@@ -126,7 +126,7 @@
       0 4px 15px rgba(0, 0, 0, 0.03),
       inset 0 0 20px rgba(255, 255, 255, 0.5);
     max-width: 650px;
-    margin: 0 auto;
+    margin: 3% auto;
   }
   
   /* Decorative elements for meetingBox */
@@ -262,254 +262,254 @@
       rgba(218, 165, 32, 0.35)
     );
   }
-  @media screen and (max-width: 349px) {
-    .container {
-      padding: 1rem;
-      gap: 1rem;
-    }
-    
-    .courseWrapper {
-      margin-bottom: 0.8rem;
-    }
-    
-    .title {
-      font-size: 1.8rem;
-      margin: 2% auto;
-    }
-  
-    .courseButton {
-      border-radius: 15px;
-      padding: 1.2rem;
-      box-shadow: 
-        0 8px 20px rgba(0, 0, 0, 0.05),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    }
-    
-    .mainTitle {
-      font-size: 1.2rem;
-    }
-    
-    .subtitle {
-      font-size: 0.9rem;
-      margin-top: 0.3rem;
-    }
-  
-    .meetingsContainer {
-      padding: 1.5rem 0;
-    }
-    
-    .innerContentWrapper {
-      width: 95%;
-      gap: 1.5rem;
-    }
-    
-    .meetingBox {
-      padding: 1rem;
-      border-radius: 12px;
-    }
-    
-    .meetingTitle {
-      font-size: 1.2rem;
-    }
-    
-    .meetingNumber {
-      width: 25px;
-      height: 25px;
-      font-size: 0.9rem;
-    }
-    
-    .detailItem {
-      font-size: 0.9rem;
-      padding-right: 1.2rem;
-    }
+@media screen and (max-width: 349px) {
+  .container {
+    padding: 1rem;
+    gap: 1rem;
   }
   
-  @media screen and (min-width: 350px) and (max-width: 450px) {
-    .container {
-      padding: 1.2rem;
-      gap: 1.3rem;
-    }
-    
-    .courseWrapper {
-      margin-bottom: 0.9rem;
-    }
-  
-    .title {
-      font-size: 2rem;
-      margin: 4% auto 2%;
-    }
-  
-    .courseButton {
-      border-radius: 17px;
-      padding: 1.4rem;
-    }
-    
-    .mainTitle {
-      font-size: 1.4rem;
-    }
-    
-    .subtitle {
-      font-size: 1rem;
-      margin-top: 0.4rem;
-    }
-  
-    .meetingsContainer {
-      padding: 1.8rem 0;
-    }
-    
-    .innerContentWrapper {
-      width: 95%;
-      gap: 1.8rem;
-    }
-    
-    .meetingBox {
-      padding: 1.2rem;
-      border-radius: 14px;
-    }
-    
-    .meetingTitle {
-      font-size: 1.3rem;
-    }
-    
-    .meetingNumber {
-      width: 28px;
-      height: 28px;
-      font-size: 0.95rem;
-    }
-    
-    .detailItem {
-      font-size: 0.95rem;
-      padding-right: 1.3rem;
-    }
+  .courseWrapper {
+    margin-bottom: 0.8rem;
   }
   
-  @media screen and (min-width: 451px) and (max-width: 550px) {
-    .container {
-      padding: 1.4rem;
-      gap: 1.5rem;
-    }
-    
-    .title {
-      font-size: 2.2rem;
-    }
-    
-    .courseButton {
-      padding: 1.6rem;
-      border-radius: 18px;
-    }
-    
-    .mainTitle {
-      font-size: 1.5rem;
-    }
-    
-    .subtitle {
-      font-size: 1.1rem;
-    }
-  
-    .meetingsContainer {
-      padding: 2rem 0;
-    }
-    
-    .innerContentWrapper {
-      width: 92%;
-      gap: 2rem;
-    }
-    
-    .meetingBox {
-      padding: 1.4rem;
-    }
-    
-    .meetingTitle {
-      font-size: 1.4rem;
-    }
-    
-    .meetingNumber {
-      width: 30px;
-      height: 30px;
-      font-size: 1rem;
-    }
-    
-    .detailItem {
-      font-size: 1rem;
-    }
+  .title {
+    font-size: 1.8rem;
+    margin: 2% auto;
+  }
+
+  .courseButton {
+    border-radius: 15px;
+    padding: 1.2rem;
+    box-shadow: 
+      0 8px 20px rgba(0, 0, 0, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
   }
   
-  @media screen and (min-width: 551px) and (max-width: 650px) {
-    .container {
-      padding: 1.6rem;
-      gap: 1.7rem;
-    }
-    
-    .title {
-      font-size: 2.4rem;
-    }
-    
-    .courseButton {
-      padding: 1.8rem;
-    }
-    
-    .mainTitle {
-      font-size: 1.6rem;
-    }
-    
-    .subtitle {
-      font-size: 1.15rem;
-    }
-  
-    .meetingsContainer {
-      padding: 2rem 0;
-    }
-    
-    .innerContentWrapper {
-      width: 90%;
-      gap: 2rem;
-    }
-    
-    .meetingBox {
-      padding: 1.6rem;
-    }
-    
-    .meetingTitle {
-      font-size: 1.45rem;
-    }
-    
-    .meetingNumber {
-      width: 32px;
-      height: 32px;
-      font-size: 1.05rem;
-    }
+  .mainTitle {
+    font-size: 1.2rem;
   }
   
-  @media screen and (min-width: 651px) and (max-width: 750px) {
-    .container {
-      padding: 1.8rem;
-      gap: 1.8rem;
-    }
-    
-    .title {
-      font-size: 2.6rem;
-    }
-    
-    .courseButton {
-      padding: 1.9rem;
-    }
-    
-    .mainTitle {
-      font-size: 1.8rem;
-    }
-    
-    .subtitle {
-      font-size: 1.17rem;
-    }
-    
-    .meetingBox {
-      padding: 1.8rem;
-    }
-    
-    .meetingTitle {
-      font-size: 1.47rem;
-    }
+  .subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
   }
+
+  .meetingsContainer {
+    padding: 1.5rem 0;
+  }
+  
+  .innerContentWrapper {
+    width: 95%;
+    gap: 1.5rem;
+  }
+  
+  .meetingBox {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .meetingTitle {
+    font-size: 1.2rem;
+  }
+  
+  .meetingNumber {
+    width: 25px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+  
+  .detailItem {
+    font-size: 0.9rem;
+    padding-right: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .container {
+    padding: 1.2rem;
+    gap: 1.3rem;
+  }
+  
+  .courseWrapper {
+    margin-bottom: 0.9rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 4% auto 2%;
+  }
+
+  .courseButton {
+    border-radius: 17px;
+    padding: 1.4rem;
+  }
+  
+  .mainTitle {
+    font-size: 1.4rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 0.4rem;
+  }
+
+  .meetingsContainer {
+    padding: 1.8rem 0;
+  }
+  
+  .innerContentWrapper {
+    width: 95%;
+    gap: 1.8rem;
+  }
+  
+  .meetingBox {
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+  
+  .meetingTitle {
+    font-size: 1.3rem;
+  }
+  
+  .meetingNumber {
+    width: 28px;
+    height: 28px;
+    font-size: 0.95rem;
+  }
+  
+  .detailItem {
+    font-size: 0.95rem;
+    padding-right: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 550px) {
+  .container {
+    padding: 1.4rem;
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .courseButton {
+    padding: 1.6rem;
+    border-radius: 18px;
+  }
+  
+  .mainTitle {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .meetingsContainer {
+    padding: 2rem 0;
+  }
+  
+  .innerContentWrapper {
+    width: 92%;
+    gap: 2rem;
+  }
+  
+  .meetingBox {
+    padding: 1.4rem;
+  }
+  
+  .meetingTitle {
+    font-size: 1.4rem;
+  }
+  
+  .meetingNumber {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .detailItem {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  .container {
+    padding: 1.6rem;
+    gap: 1.7rem;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+  }
+  
+  .courseButton {
+    padding: 1.8rem;
+  }
+  
+  .mainTitle {
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 1.15rem;
+  }
+
+  .meetingsContainer {
+    padding: 2rem 0;
+  }
+  
+  .innerContentWrapper {
+    width: 90%;
+    gap: 2rem;
+  }
+  
+  .meetingBox {
+    padding: 1.6rem;
+  }
+  
+  .meetingTitle {
+    font-size: 1.45rem;
+  }
+  
+  .meetingNumber {
+    width: 32px;
+    height: 32px;
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  .container {
+    padding: 1.8rem;
+    gap: 1.8rem;
+  }
+  
+  .title {
+    font-size: 2.6rem;
+  }
+  
+  .courseButton {
+    padding: 1.9rem;
+  }
+  
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1.17rem;
+  }
+  
+  .meetingBox {
+    padding: 1.8rem;
+  }
+  
+  .meetingTitle {
+    font-size: 1.47rem;
+  }
+}
   /* 750px - 850px */
   @media screen and (min-width: 751px) and (max-width: 850px) {
     .container {
@@ -805,7 +805,7 @@
       0 4px 15px rgba(0, 0, 0, 0.03),
       inset 0 0 20px rgba(255, 255, 255, 0.5);
     max-width: 650px;
-    margin: 0 auto;
+    margin: 3% auto;
   }
   
   /* Decorative elements for meetingBox */
