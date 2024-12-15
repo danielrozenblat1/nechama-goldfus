@@ -9,6 +9,7 @@ import result7 from "../../images/נחמה גודלפוס עבודות 7.png"
 import result8 from "../../images/נחמה גודלפוס עבודות 8.png"
 import result9 from "../../images/נחמה גודלפוס עבודות 9.png"
 import result10 from "../../images/נחמה גודלפוס עבודות 10.png"
+import result11 from "../../images/נחמה גולדפוס עבודות 11.png"
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -52,6 +53,10 @@ const Recommends=()=>{
         {
           type: 'image',
           src: result2,
+        },
+        {
+          type: 'image',
+          src: result11,
         },
         {
           type: 'image',

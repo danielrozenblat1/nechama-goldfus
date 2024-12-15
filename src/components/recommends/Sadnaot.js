@@ -9,7 +9,11 @@ import result7 from "../../images/נחמה גולדפוס סדנאות 7.png"
 import result8 from "../../images/נחמה גולדפוס סדנאות 8.png"
 import result9 from "../../images/נחמה גולדפוס סדנאות 9.png"
 import result10 from "../../images/נחמה גולדפוס סדנאות 10.png"
-import result11 from  "../../images/נחמה גולדפוס סדנאות 11.png"
+import result11 from "../../images/נחמה גולדפוס סדנאות 11.png"
+import result12 from  "../../images/נחמה גולדפוס סדנאות 12.png"
+import result13 from  "../../images/נחמה גולדפוס סדנאות 13.png"
+import result14 from  "../../images/נחמה גולדפוס סדנאות 14.png"
+import result15 from  "../../images/נחמה גולדפוס סדנאות 15.png"
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -38,7 +42,7 @@ const Sadnaot=()=>{
         },
         {
           type: 'image',
-          src: result11,
+          src: result12,
         },
 
      
@@ -46,6 +50,11 @@ const Sadnaot=()=>{
           type: 'image',
           src: result8,
         },
+        {
+          type: 'image',
+          src: result13,
+        },
+
         {
           type: 'image',
           src: result10,
@@ -56,12 +65,22 @@ const Sadnaot=()=>{
         },
         {
           type: 'image',
+          src: result14,
+        },
+
+        {
+          type: 'image',
           src: result2,
         },
         {
           type: 'image',
           src: result3,
         },
+        {
+          type: 'image',
+          src: result15,
+        },
+
         {
           type: 'image',
           src: result4,
