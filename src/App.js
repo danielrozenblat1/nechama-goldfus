@@ -10,6 +10,7 @@ import Sadnaot from './components/recommends/Sadnaot.js';
 import ByMe from './components/ByMe/ByMe.js';
 import SupremeCourse from './components/sadnaot/Sadnaot.js';
 import ForthScreen from './screens/ForthScreen.js';
+import PrivacyPolicy from './components/privacy/Privacy.js';
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
