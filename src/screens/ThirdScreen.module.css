@@ -1,0 +1,133 @@
+.title {
+  font-family: "Assistant";
+  text-align: center;
+  direction: rtl;
+  color: rgba(196, 164, 132, 0.9);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 3% auto;
+}
+
+.description {
+  font-family: 'AssistantR', sans-serif;
+  text-align: center;
+  direction: rtl;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2% auto;
+}
+
+/* Under 350px */
+@media screen and (max-width: 349px) {
+  .title {
+    font-size: 1.8rem;
+    margin: 2% auto;
+  }
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 350px - 450px */
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 450px - 550px */
+@media screen and (min-width: 451px) and (max-width: 550px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+}
+
+/* 550px - 650px */
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  .title {
+    font-size: 2.4rem;
+  }
+  .description {
+    font-size: 1.35rem;
+  }
+}
+
+/* 650px - 750px */
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  .title {
+    font-size: 2.6rem;
+  }
+  .description {
+    font-size: 1.35rem;
+  }
+}
+
+/* 750px - 850px */
+@media screen and (min-width: 751px) and (max-width: 850px) {
+  .title {
+    font-size: 2.7rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+}
+
+/* 850px - 950px */
+@media screen and (min-width: 851px) and (max-width: 950px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  .description {
+    font-size: 1.37rem;
+  }
+}
+
+/* 950px - 1050px */
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+  .title {
+    font-size: 2.9rem;
+  }
+  .description {
+    font-size: 1.38rem;
+  }
+}
+
+/* 1050px - 1150px */
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+  .title {
+    font-size: 2.95rem;
+  }
+  .description {
+    font-size: 1.39rem;
+  }
+}
+
+/* 1150px - 1250px */
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+}
